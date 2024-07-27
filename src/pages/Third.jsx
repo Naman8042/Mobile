@@ -15,7 +15,7 @@ const Third = () => {
   return (
     <div className='p-5 md:hidden block'>
       <div className='relative mb-5'>
-        <img src={Hotel} alt='' className='w-full h-72 rounded-2xl object-cover' />
+        <img src={Hotel} alt='' className='w-full h-80 rounded-2xl object-cover' />
         <p className='absolute top-2 left-2 bg-white text-gray-500 p-4 text-xs rounded-xl' onClick={handleNavigate}><FaChevronLeft/></p>
         <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
           <FaStar color='yellow' />
