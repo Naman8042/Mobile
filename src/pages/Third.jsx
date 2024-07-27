@@ -13,9 +13,9 @@ const Third = () => {
     navigate("/page2")
 }
   return (
-    <div className='p-5 md:hidden block'>
-      <div className='relative mb-5'>
-        <img src={Hotel} alt='' className='w-full h-96 rounded-2xl object-cover' />
+    <div className='p-5 md:hidden block h-screen'>
+      <div className='relative mb-5 h-80'>
+        <img src={Hotel} alt='' className='w-full h-full rounded-2xl object-cover' />
         <p className='absolute top-2 left-2 bg-white text-gray-500 p-4 text-xs rounded-xl' onClick={handleNavigate}><FaChevronLeft/></p>
         <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
           <FaStar color='yellow' />
