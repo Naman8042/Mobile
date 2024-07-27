@@ -22,11 +22,11 @@ const Third = () => {
           4.1
         </p>
       </div>
-      <div className='flex justify-between items-center px-1'>
+      <div className='flex justify-between items-center '>
         <h1 className='text-2xl font-semibold'>Coeurdes Alpes</h1>
         <div className='text-xs text-blue-600 font-bold'>Show Map</div>
       </div>
-      <div className='flex gap-1 mt-1 items-center pl-2'>
+      <div className='flex gap-1 mt-1 items-center pl-1'>
         <FaStar className='text-amber-600' size={13} />
         <p className='text-xs'>4.5 (355 Reviews)</p>
       </div>
