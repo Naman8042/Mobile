@@ -38,19 +38,19 @@ const Third = () => {
       </div>
       <h1 className='text-xl font-semibold'>Facilities</h1>
       <div className='flex justify-between gap-5 mt-2'>
-        <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
+        <div className='flex flex-col gap-1 justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
           <CiWifiOn size={30} />
           <p className='text-xs'>1 Heater</p>
         </div>
-        <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
+        <div className='flex flex-col gap-1 justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
           <MdOutlineFastfood size={30} />
           <p className='text-xs'>Dinner</p>
         </div>
-        <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
+        <div className='flex flex-col gap-1 justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
           <GiBathtub size={30} />
           <p className='text-xs'>1 Tub</p>
         </div>
-        <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
+        <div className='flex flex-col gap-1 justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
           <FaSwimmingPool size={30} />
           <p className='text-xs'>Pool</p>
         </div>
