@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
 import { FaMapMarkerAlt, FaChevronDown, FaSearch, FaStar } from "react-icons/fa";
 import Hotel from '../assets/Hotel.jpeg'
+import { useNavigate } from 'react-router-dom';
 import './Horizontal.css';
 
 const Second = () => {
+    const navigate = useNavigate()
     const options = ["Location", "Hotel", "Food", "Adventure", "Actions"];
     const [selectedOption, setSelectedOption] = useState(null);
     const handleClick = (option) => {
         setSelectedOption(option);
     };
+    const handleNavigate = ()=>{
+        navigate("/page3")
+    }
 
     return (
         <div className='pt-5'>
@@ -49,7 +54,7 @@ const Second = () => {
                 <p className='text-xs font-semibold text-blue-600'>See All</p>
             </div>
             <div className='grid grid-cols-2 gap-5 px-5 mb-5'>
-                <div className='relative'>
+                <div className='relative' onClick={handleNavigate}>
                     <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
                     <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
@@ -57,7 +62,7 @@ const Second = () => {
                         4.1
                     </p>
                 </div>
-                <div className='relative'>
+                <div className='relative' onClick={handleNavigate}>
                     <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
                     <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
@@ -71,7 +76,7 @@ const Second = () => {
                 <p className='text-xs font-semibold text-blue-600'>See All</p>
             </div>
             <div className='grid grid-cols-2 gap-5 px-5'>
-                <div className='relative'>
+                <div className='relative' onClick={handleNavigate}>
                     <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
                     <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
@@ -79,7 +84,7 @@ const Second = () => {
                         4.1
                     </p>
                 </div>
-                <div className='relative'>
+                <div className='relative' onClick={handleNavigate}>
                     <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
                     <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>

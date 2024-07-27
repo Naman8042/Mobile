@@ -1,5 +1,6 @@
 import React from 'react'
 import Mountain from '../assets/Mountain.jpg'
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
         <p className='text-4xl font-semibold'>Vacation</p>
       </div>
       <div className='absolute bottom-12 flex items-center justify-center w-full px-6'>
-      <button className='w-full bg-blue-700 py-3 rounded-lg text-white'>Explore</button>
+      <button className='w-full bg-blue-700 py-3 rounded-lg text-white'>
+        <Link to="/page2">Explore</Link>
+      </button>
       </div>
     </div>
   )

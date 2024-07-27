@@ -4,14 +4,19 @@ import { CiWifiOn } from "react-icons/ci";
 import { MdOutlineFastfood } from "react-icons/md";
 import { GiBathtub } from "react-icons/gi";
 import { FaSwimmingPool } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight ,FaChevronLeft} from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 const Third = () => {
+  const navigate = useNavigate()
+  const handleNavigate = ()=>{
+    navigate("/page2")
+}
   return (
     <div className='p-5 md:hidden block'>
       <div className='relative mb-5'>
         <img src={Hotel} alt='' className='w-full h-72 rounded-2xl object-cover' />
-        <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
+        <p className='absolute top-2 left-2 bg-white text-gray-500 p-4 text-xs rounded-xl' onClick={handleNavigate}><FaChevronLeft/></p>
         <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
           <FaStar color='yellow' />
           4.1
