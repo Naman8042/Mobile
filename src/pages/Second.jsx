@@ -16,7 +16,7 @@ const Second = () => {
     }
 
     return (
-        <div className='pt-5'>
+        <div className='pt-5 overflow-x-hidden'>
             <div className='px-5 flex justify-between items-start'>
                 <div>
                     <p>Explore</p>
