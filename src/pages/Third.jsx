@@ -1,25 +1,25 @@
-import Hotel from '../assets/Hotel.jpeg'
+import Hotel from '../assets/Alley.jpeg'
 import { FaStar, FaChevronDown } from "react-icons/fa";
 import { CiWifiOn } from "react-icons/ci";
 import { MdOutlineFastfood } from "react-icons/md";
 import { GiBathtub } from "react-icons/gi";
 import { FaSwimmingPool } from "react-icons/fa";
-import { FaArrowRight ,FaChevronLeft} from "react-icons/fa6";
+import { FaArrowRight, FaChevronLeft } from "react-icons/fa6";
+import { IoMdHeart } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 
 const Third = () => {
   const navigate = useNavigate()
-  const handleNavigate = ()=>{
+  const handleNavigate = () => {
     navigate("/page2")
-}
+  }
   return (
     <div className='p-5 md:hidden block h-full'>
       <div className='relative mb-5 h-80'>
         <img src={Hotel} alt='' className='w-full h-full rounded-2xl object-cover' />
-        <p className='absolute top-2 left-2 bg-white text-gray-500 p-4 text-xs rounded-xl' onClick={handleNavigate}><FaChevronLeft/></p>
-        <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
-          <FaStar color='yellow' />
-          4.1
+        <p className='absolute top-2 left-2 bg-white text-gray-500 p-4 text-xs rounded-xl' onClick={handleNavigate}><FaChevronLeft /></p>
+        <p className='flex justify-center items-center gap-1 absolute -bottom-5 shadow-md right-2 bg-white text-white p-2  text-xs rounded-full'>
+          <IoMdHeart size={25} color='red'/>
         </p>
       </div>
       <div className='flex justify-between items-center '>
@@ -39,20 +39,20 @@ const Third = () => {
       <h1 className='text-xl font-semibold'>Facilities</h1>
       <div className='flex justify-between gap-5 mt-2'>
         <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
-        <CiWifiOn size={30}/>
-        <p className='text-xs'>1 Heater</p>
+          <CiWifiOn size={30} />
+          <p className='text-xs'>1 Heater</p>
         </div>
         <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
-        <MdOutlineFastfood  size={30}/>
-        <p className='text-xs'>Dinner</p>
+          <MdOutlineFastfood size={30} />
+          <p className='text-xs'>Dinner</p>
         </div>
         <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
-        <GiBathtub size={30}/>
-        <p className='text-xs'>1 Tub</p>
+          <GiBathtub size={30} />
+          <p className='text-xs'>1 Tub</p>
         </div>
         <div className='flex flex-col justify-center items-center bg-blue-100 w-full py-2 rounded-xl text-gray-400'>
-        <FaSwimmingPool size={30}/>
-        <p className='text-xs'>Pool</p>
+          <FaSwimmingPool size={30} />
+          <p className='text-xs'>Pool</p>
         </div>
       </div>
       <div className='flex justify-between mt-5'>
@@ -61,7 +61,7 @@ const Third = () => {
           <p className='text-2xl text-green-500 font-bold'>$199</p>
         </div>
         <button className='flex gap-2 justify-center items-center w-[70%] bg-blue-600 text-white rounded-lg'>
-          Book Now <FaArrowRight/>
+          Book Now <FaArrowRight />
         </button>
       </div>
     </div>

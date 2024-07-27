@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import { FaMapMarkerAlt, FaChevronDown, FaSearch, FaStar } from "react-icons/fa";
-import Hotel from '../assets/Hotel.jpeg'
+import { IoMdHeart } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
+import Alley from '../assets/Alley.jpeg'
+import Alpes from '../assets/Alpes.jpg'
+import London from '../assets/London.jpg'
+import America from '../assets/America.jpg'
 import './Horizontal.css';
 
 const Second = () => {
@@ -11,13 +15,13 @@ const Second = () => {
     const handleClick = (option) => {
         setSelectedOption(option);
     };
-    const handleNavigate = ()=>{
+    const handleNavigate = () => {
         navigate("/page3")
     }
 
     return (
-        <div className='pt-5 overflow-x-hidden'>
-            <div className='px-5 flex justify-between items-start'>
+        <div className='p-5 overflow-x-hidden'>
+            <div className=' flex justify-between items-start'>
                 <div>
                     <p>Explore</p>
                     <p className='text-3xl font-semibold'>Aspen</p>
@@ -29,7 +33,7 @@ const Second = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center my-5'>
-                <div className="flex items-center w-[90%] rounded-2xl p-2 bg-blue-50 py-3">
+                <div className="flex items-center w-full rounded-2xl p-2 bg-blue-50 py-3">
                     <FaSearch className="text-gray-400 mr-2" />
                     <input
                         type="text"
@@ -38,7 +42,7 @@ const Second = () => {
                     />
                 </div>
             </div>
-            <div className="flex overflow-x-auto space-x-1 px-5 rounded-md horizontal-scroll-container mb-5 items-center md:justify-center w-screen">
+            <div className="flex overflow-x-auto space-x-1  rounded-md horizontal-scroll-container mb-5 items-center md:justify-center w-screen">
                 {options.map((option, index) => (
                     <div
                         key={index}
@@ -49,48 +53,72 @@ const Second = () => {
                     </div>
                 ))}
             </div>
-            <div className='flex px-5 justify-between items-center mb-5'>
+            <div className='flex  justify-between items-center mb-5'>
                 <p className='text-xl font-semibold'>Popular</p>
                 <p className='text-xs font-semibold text-blue-600'>See All</p>
             </div>
-            <div className='grid grid-cols-2 gap-5 px-5 mb-5'>
+            <div className='grid grid-cols-2 gap-5  mb-5'>
                 <div className='relative' onClick={handleNavigate}>
-                    <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
+                    <img src={Alpes} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
-                    <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
-                        <FaStar color='yellow' />
-                        4.1
-                    </p>
+                    <div className='absolute bottom-2 left-2 flex justify-between w-full pr-4'>
+                        <p className='flex justify-center items-center gap-1  bg-gray-500 text-white py- px-2 text-xs rounded-2xl'>
+                            <FaStar color='yellow' />
+                            4.1
+                        </p>
+                        <p className='flex justify-center items-center gap-1  shadow-md  bg-white text-white p-1  text-xs rounded-full'>
+                            <IoMdHeart size={15} color='red' />
+                        </p>
+                    </div>
+
                 </div>
                 <div className='relative' onClick={handleNavigate}>
-                    <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
-                    <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
-                    <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
-                        <FaStar color='yellow' />
-                        4.1
-                    </p>
+                    <img src={Alley} alt='' className='w-full h-56 rounded-2xl object-cover' />
+                    <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Coeurdes alpes</p>
+                    <div className='absolute bottom-2 left-2 flex justify-between w-full pr-4'>
+                        <p className='flex justify-center items-center gap-1  bg-gray-500 text-white py- px-2 text-xs rounded-2xl'>
+                            <FaStar color='yellow' />
+                            4.1
+                        </p>
+                        <p className='flex justify-center items-center gap-1  shadow-md  bg-white text-white p-1  text-xs rounded-full'>
+                            <IoMdHeart size={15} color='red' />
+                        </p>
+                    </div>
+
                 </div>
             </div>
-            <div className='flex px-5 justify-between items-center mb-5'>
+            <div className='flex  justify-between items-center mb-5'>
                 <p className='text-xl font-semibold'>Recommended</p>
                 <p className='text-xs font-semibold text-blue-600'>See All</p>
             </div>
-            <div className='grid grid-cols-2 gap-5 px-5'>
+            <div className='grid grid-cols-2 gap-5 '>
                 <div className='relative' onClick={handleNavigate}>
-                    <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
+                    <img src={London} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
-                    <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
-                        <FaStar color='yellow' />
-                        4.1
-                    </p>
+                    <div className='absolute bottom-2 left-2 flex justify-between w-full pr-4'>
+                        <p className='flex justify-center items-center gap-1  bg-gray-500 text-white py- px-2 text-xs rounded-2xl'>
+                            <FaStar color='yellow' />
+                            4.1
+                        </p>
+                        <p className='flex justify-center items-center gap-1  shadow-md  bg-white text-white p-1  text-xs rounded-full'>
+                            <IoMdHeart size={15} color='red' />
+                        </p>
+                    </div>
+
                 </div>
                 <div className='relative' onClick={handleNavigate}>
-                    <img src={Hotel} alt='' className='w-full h-56 rounded-2xl object-cover' />
+                    <img src={America} alt='' className='w-full h-56 rounded-2xl object-cover' />
                     <p className='absolute bottom-10 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>Alley Place</p>
-                    <p className='flex justify-center items-center gap-1 absolute bottom-2 left-2 bg-gray-500 text-white py-1 px-4 text-xs rounded-2xl'>
-                        <FaStar color='yellow' />
-                        4.1
-                    </p>
+                    <div className='absolute bottom-2 left-2 flex justify-between w-full pr-4'>
+                        <p className='flex justify-center items-center gap-1  bg-gray-500 text-white py- px-2 text-xs rounded-2xl'>
+                            <FaStar color='yellow' />
+                            4.1
+                        </p>
+                        <p className='flex justify-center items-center gap-1  shadow-md  bg-white text-white p-1  text-xs rounded-full'>
+                            <IoMdHeart size={15} color='red' />
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
