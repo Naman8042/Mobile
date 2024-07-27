@@ -13,7 +13,7 @@ const Third = () => {
     navigate("/page2")
 }
   return (
-    <div className='p-5 md:hidden block h-screen'>
+    <div className='p-5 md:hidden block h-full'>
       <div className='relative mb-5 h-80'>
         <img src={Hotel} alt='' className='w-full h-full rounded-2xl object-cover' />
         <p className='absolute top-2 left-2 bg-white text-gray-500 p-4 text-xs rounded-xl' onClick={handleNavigate}><FaChevronLeft/></p>
