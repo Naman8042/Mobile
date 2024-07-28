@@ -1,5 +1,5 @@
 import React from 'react'
-import Mountain from '../assets/Mountain2.jpg'
+import Mountain from '../assets/Mountain.jpg'
 import {Link} from 'react-router-dom'
 
 const Home = () => {
