@@ -13,9 +13,11 @@ const Home = () => {
         <p className='text-5xl font-bold'>Vacation</p>
       </div>
       <div className='absolute bottom-5 flex items-center justify-center w-full px-6'>
-      <button className='w-full bg-blue-700 py-3 rounded-2xl text-white'>
-        <Link to="/page2">Explore</Link>
+      <Link to="/page2" className='w-full'>
+      <button className='w-full bg-blue-700 py-3 rounded-3xl text-white'>
+        Explore
       </button>
+      </Link>
       </div>
     </div>
   )
